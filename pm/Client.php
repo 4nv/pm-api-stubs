@@ -19,6 +19,14 @@ class pm_Client
     public static function getByClientId($clientId) { }
 
     /**
+     * Retrieve client by known guid. Throws pm_Exception if client not found.
+     *
+     * @throws pm_Exception
+     * @since 18.0.74
+     */
+    public static function getByGuid(string $guid): pm_Client { }
+
+    /**
      * Retrieve client by known login. Throws pm_Exception if client not found.
      *
      * @param string $login
